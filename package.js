@@ -1,10 +1,10 @@
 'use strict';
 
 Package.describe({
-    name: 'vazco:universe-autoform-select',
+    name: 'artemi:universe-autoform-select',
     summary: 'Custom "afUniverseSelect" input type for AutoForm, with the appearance as selectize',
     version: '0.3.10',
-    git: 'https://github.com/vazco/meteor-universe-autoform-select.git'
+    git: 'https://github.com/urnix/meteor-universe-autoform-select.git'
 });
 
 Package.onUse(function (api) {
@@ -18,7 +18,7 @@ Package.onUse(function (api) {
 
     api.use(['ecmascript', 'templating', 'underscore'], 'client');
     api.use('aldeed:autoform@5.8.1');
-    api.use('vazco:universe-selectize@0.1.17', 'client');
+    api.use('artemi:universe-selectize@0.1.23', 'client');
 
     api.addFiles([
         'universe-autoform-select.html',
